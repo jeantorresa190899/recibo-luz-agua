@@ -7,11 +7,11 @@ let nombres3 = ['FRANCISCA MONCADA','MARINA HOYOS','OSCAR PRADO','CARMEN CHAVEZ'
 
 nombres.forEach(nombre => {
     contenido.innerHTML += `
-    <div class="row m-4 text-center">
-        <h5 class="col m-2">${nombres.indexOf(nombre) + 1}</h5>
-        <h5 class="col m-2">${nombre}</h5>
-        <input style="max-width:120px" type="number" class="form-control col mx-4" id="actual-${nombres.indexOf(nombre) + 1}">
-        <input style="max-width:120px" type="number" class="form-control col mx-4" id="antes-${nombres.indexOf(nombre) + 1}">
+    <div class="row m-4">
+        <b class="col m-2" style="max-width:30px">${nombres.indexOf(nombre) + 1}</b>
+        <b class="col m-2" style="min-width:180px">${nombre}</b>
+        <input style="max-width:100px; min-width:100px" type="number" class="form-control col mx-4" id="actual-${nombres.indexOf(nombre) + 1}">
+        <input style="max-width:100px; min-width:100px" type="number" class="form-control col mx-4" id="antes-${nombres.indexOf(nombre) + 1}">
     </div>
     <hr>
     `;
@@ -19,11 +19,11 @@ nombres.forEach(nombre => {
 
 nombres2.forEach(nombre =>{
     contenido2.innerHTML += `
-    <div class="row m-4 text-center">
-        <h5 class="col m-2">${nombres2.indexOf(nombre) + 29}</h5>
-        <h5 class="col m-2">${nombre}</h5>
-        <input style="max-width:120px" type="number" class="form-control col mx-4" id="actual-${nombres2.indexOf(nombre) + 29}">
-        <input style="max-width:120px" type="number" class="form-control col mx-4" id="antes-${nombres2.indexOf(nombre) + 29}">
+    <div class="row m-4">
+        <b class="col m-2" style="max-width:30px">${nombres2.indexOf(nombre) + 29}</b>
+        <b class="col m-2" style="min-width:180px">${nombre}</b>
+        <input style="max-width:100px" type="number" class="form-control col mx-4" id="actual-${nombres2.indexOf(nombre) + 29}">
+        <input style="max-width:100px" type="number" class="form-control col mx-4" id="antes-${nombres2.indexOf(nombre) + 29}">
     </div>
     <hr>
     `;
@@ -32,10 +32,10 @@ nombres2.forEach(nombre =>{
 nombres3.forEach(nombre =>{
     contenido3.innerHTML += `
     <div class="row m-4 text-center">
-        <h5 class="col m-2">${nombres3.indexOf(nombre) + 15}</h5>
-        <h5 class="col m-2">${nombre}</h5>
-        <input style="max-width:120px" type="number" class="form-control col mx-4" id="actual-${nombres3.indexOf(nombre) + 15}">
-        <input style="max-width:120px" type="number" class="form-control col mx-4" id="antes-${nombres3.indexOf(nombre) + 15}">
+        <b class="col m-2" style="max-width:30px">${nombres3.indexOf(nombre) + 15}</b>
+        <b class="col m-2" style="min-width:200px">${nombre}</b>
+        <input style="max-width:100px" type="number" class="form-control col mx-4" id="actual-${nombres3.indexOf(nombre) + 15}">
+        <input style="max-width:100px" type="number" class="form-control col mx-4" id="antes-${nombres3.indexOf(nombre) + 15}">
     </div>
     <hr>
     `;
@@ -318,9 +318,9 @@ function descargar(){
     var opt = {
         margin:       .3,
         filename:     'myfile.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
+        image:        { type: 'jpeg', quality: 0.99 },
         html2canvas:  { scale: 2 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        jsPDF:        { unit: 'in', format: 'A4', orientation: 'portrait' }
       };
     html2pdf().set(opt).from(elemento).save();
 }
