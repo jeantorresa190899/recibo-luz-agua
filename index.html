@@ -5,102 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
     <script src="html2pdf.bundle.min.js"></script>
 </head>
 <style>
-#logo{
-    height: 30px;
-    font-size: 20px;
-    padding: 0 25px;
-    background-color: rgba(237, 125, 49, 1);
-    border-color: rgba(237, 125, 49, 1);
-}
-.enel{
-    width: 100px;
-    height: 33px;
-    object-fit: contain;
-}
-
-.sedapal{
-    width: 100px;
-    height: 33px;
-    object-fit: contain;  
-}
-.fecha{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.fecha p{
-    margin: 0 auto;
-}
-
-.div-nivel{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-}
-.nivel{
-    background-color: rgba(112, 173, 71, 1);
-    color: #fff;
-    width: 100px;
-    font-size: 17px;
-    padding: 3px ;
-    border-radius: 5px;
-    margin:5px;
-}
-.galeria{
-    background-color: rgba(237, 125, 49, 1);
-    color: #fff;
-    width: 180px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 3px ;
-    border-radius: 5px;
-    margin:5px;
-}
-
-table{
-    font-size: 11px;
-    line-height: .7;
-    margin-bottom: 8px !important;
-}
-table tbody tr{
-    line-height: .5;
-}
-
-body{
-    margin: 30px 60px;
-}
-
-.titulo{
-    font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 7px;
-}
-
-.inicio{
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.imgs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
-
-.imgs div p{
-    font-weight: bold;
-}
 </style>
 
 <body class="">
@@ -134,11 +45,11 @@ body{
     <span id="res"></span>
 
     <h1>PRIMER PISO</h1>
-    <div class="row m-4 text-center ">
-        <div class="col"><b>STAND</b></div>
-        <div style="max-width:550px" class="col mx-4"><b>NOMBRE</b></div>
-        <div style="max-width:120px" class="col mx-4"><b>LECTURA ACTUAL</b></div>
-        <div style="max-width:120px" class="col mx-4"><b>LECTURA ANTERIOR</b></div>
+    <div id="cabecera" class="row m-4 text-center">
+        <div style="text-align: start; padding: 0; max-width: 30px !important" class="col"><b>#</b></div>
+        <div style="min-width: 190px !important" class="col mx-4"><b>NOMBRE</b></div>
+        <div style="min-width: 120px !important" class="col mx-4"><b>LECTURA ACTUAL</b></div>
+        <div style="min-width: 120px !important" class="col mx-4"><b>LECTURA ANTERIOR</b></div>
     </div>
     <div id="contenido"></div>
     <div id="contenido2"></div>
@@ -152,8 +63,8 @@ body{
     </div>
     <div id="contenido3"></div>
     <div class="row m-4 text-center">
-        <h5 class="col m-2">3er Piso</h5>
-        <h5 class="col m-2">SALON DE EVENTOS</h5>
+        <b class="col m-2" style="min-width:30px">3er Piso</b>
+        <b class="col m-2" style="min-width:200px">SALON DE EVENTOS</b>
         <input style="max-width:120px" type="number" class="form-control col mx-4" id="actual-salon">
         <input style="max-width:120px" type="number" class="form-control col mx-4" id="antes-salon">
     </div>
@@ -176,18 +87,18 @@ body{
             <h1 class="nivel">1° Nivel</h1>
         </div>
     
-        <table class="table table-bordered text-center" id="tabla">
+        <table class="table-xs table table-bordered text-center" id="tabla">
             <thead class="table-dark">
                 <tr class="align-middle">
-                    <th scope="col">STAND</th>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">LEC. ACTUAL</th>
-                    <th scope="col">LEC. ANTERIOR</th>
+                    <th scope="col" style="min-width:65px;">STAND</th>
+                    <th scope="col" style="min-width:150px">NOMBRE</th>
+                    <th scope="col" style="min-width:90px">LEC. ACTUAL</th>
+                    <th scope="col" style="min-width:90px">LEC. ANTERIOR</th>
                     <th scope="col">CONS. KW</th>
                     <th scope="col">IMP. LUZ</th>
-                    <th scope="col">ALUMBRADO INT - EXT</th>
+                    <th scope="col">ALUMBRADO <br> INT - EXT</th>
                     <th scope="col">AGUA</th>
-                    <th scope="col">TOTAL</th>
+                    <th scope="col" style="min-width:65px"> TOTAL</th>
                 </tr>
             </thead>
             <tbody  id="datos_tabla" class="align-middle">
@@ -201,15 +112,15 @@ body{
         <table class="table table-bordered text-center">
             <thead class="table-dark">
                 <tr class="align-middle">
-                    <th scope="col">STAND</th>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">LEC. ACTUAL</th>
-                    <th scope="col">LEC. ANTERIOR</th>
+                    <th scope="col" style="min-width:65px;">STAND</th>
+                    <th scope="col" style="min-width:150px">NOMBRE</th>
+                    <th scope="col" style="min-width:90px">LEC. ACTUAL</th>
+                    <th scope="col" style="min-width:90px">LEC. ANTERIOR</th>
                     <th scope="col">CONS. KW</th>
                     <th scope="col">IMP. LUZ</th>
-                    <th scope="col">ALUMBRADO INT - EXT</th>
+                    <th scope="col">ALUMBRADO  <br> INT - EXT</th>
                     <th scope="col">AGUA</th>
-                    <th scope="col">TOTAL</th>
+                    <th scope="col" style="min-width:65px">TOTAL</th>
                 </tr>
             </thead>
             <tbody  id="datos_tabla2" class="align-middle">
