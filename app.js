@@ -7,11 +7,11 @@ let nombres3 = ['FRANCISCA MONCADA','MARINA HOYOS','OSCAR PRADO','CARMEN CHAVEZ'
 
 nombres.forEach(nombre => {
     contenido.innerHTML += `
-    <div class="row m-4">
-        <b class="col m-2" style="max-width:30px">${nombres.indexOf(nombre) + 1}</b>
-        <b class="col m-2" style="min-width:180px">${nombre}</b>
-        <input style="max-width:100px; min-width:100px" type="number" class="form-control col mx-4" id="actual-${nombres.indexOf(nombre) + 1}">
-        <input style="max-width:100px; min-width:100px" type="number" class="form-control col mx-4" id="antes-${nombres.indexOf(nombre) + 1}">
+    <div class="row inserts">
+        <b class="col m-2">${nombres.indexOf(nombre) + 1}</b>
+        <b class="col m-2">${nombre}</b>
+        <input type="number" class="form-control col" id="actual-${nombres.indexOf(nombre) + 1}">
+        <input type="number" class="form-control col" id="antes-${nombres.indexOf(nombre) + 1}">
     </div>
     <hr>
     `;

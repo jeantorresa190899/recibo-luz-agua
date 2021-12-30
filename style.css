@@ -86,7 +86,7 @@ body{
 }
 
 
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     body{
         margin: auto 7px !important;
     }
@@ -98,7 +98,7 @@ body{
     #contenido div b{
         margin: auto 3px !important;
         padding: 0 !important;
-        /* font-size: 13px; */
+
     }
 
     #contenido div input{
@@ -106,7 +106,6 @@ body{
         margin-right: 7px !important;
     }
 
-    /* 2 */
     #contenido2 div{
         margin: 0 15px !important;
     }
@@ -121,7 +120,6 @@ body{
         margin-right: 7px !important;
     }
 
-    /* cabecera */
     #cabecera{
         margin: 5px !important;
         background-color: black;
@@ -135,8 +133,7 @@ body{
         margin: 0 !important;
         border: 1px solid #fff;
     }
-
-}
+} */
 
 @media (max-width: 375px){
     body{
@@ -144,28 +141,40 @@ body{
     }
 
     #contenido div{
-        margin: 0 15px !important;
+        margin: 0 10px !important;
     }
 
     #contenido div b{
+        
         margin: auto 3px !important;
         padding: 0 !important;
         /* font-size: 13px; */
     }
+    #contenido div b:nth-child(1){
+        min-width: 55px;
+        max-width: 60px;
+    }
+    #contenido div b:nth-child(2){
+        min-width: 60px;
+        margin-right: 65px !important;
+        /* background-color: red; */
+    }
 
     #contenido div input{
-        margin: 0 !important ;
-        margin-right: 7px !important;
+        min-width: 50px;
+        margin: 0 0 0 15px!important;
+
     }
 
     /* 2 */
     #contenido2 div{
-        margin: 0 15px !important;
+        /* margin: 0 15px !important; */
     }
 
     #contenido2 div b{
-        margin: auto 3px !important;
+        /* margin: auto 3px !important; */
         padding: 0 !important;
+        color: red;
     }
 
     #contenido2 div input{
@@ -179,6 +188,19 @@ body{
         background-color: green;
         color: #fff;
         width: 100%;
+
+        font-size: 12px;
+
+        vertical-align: middle;
+
+    }
+
+    #cabecera div:nth-child(1){
+        min-width: 25px ;
+        max-width: 25px !important;
+    }
+    #cabecera div:nth-child(2){
+        min-width: 140px !important;
     }
 
     #cabecera div{
@@ -186,6 +208,20 @@ body{
         padding: 5px !important;
         margin: 0 !important;
         border: 1px solid #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+
+    .inserts{
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        margin: 0 !important;
+    }
+
+    .inserts b{
+        
+    }
 }
