@@ -241,15 +241,15 @@ body{
         max-width: 40px;
         text-align: center;
     } */
+
+
+    /* MODIFICACION A TABLA */
     .cab th{
         letter-spacing: 1px;
     }
     .cab th:nth-child(1){
         width: 40px !important;
     }
-
-    /* MODIFICACION A TABLA */
-
 
     #contenido tr td,
     #contenido2 tr td{
@@ -264,5 +264,34 @@ body{
     #contenido tr td input,
     #contenido2 tr td input{
         padding: 5px !important ;
+    }
+
+    .costos{
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .costos div{
+        width: calc(50% - 10px);
+        height: 100%;
+        /* background-color: yellow; */
+
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 10px;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .costos div input{
+        max-width: 140px;
     }
 }
