@@ -104,6 +104,12 @@ document.querySelector('#boton').addEventListener('click', add);
 
 function add(){
 
+    // Colocar la fecha de realizacion
+    let fecha = document.querySelector("#fecha").value;
+    let fecha_txt = document.querySelector("#fecha-txt");
+    fecha_txt.innerHTML = fecha;
+
+
 // Este codigo regresa los valores de cada #ACTUAL-index de los inputs
     var actuales = [];
     for (let index = 1; index <= nombres.length; index++) {

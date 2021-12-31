@@ -8,23 +8,25 @@
 
 
 .enel{
-    width: 100px;
-    height: 33px;
+    width: 120px;
+    height: auto;
     object-fit: contain;
 }
 
 .sedapal{
-    width: 100px;
-    height: 33px;
+    width: 120px;
+    height: auto;
     object-fit: contain;  
 }
 .fecha{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex-direction: column;
 }
 .fecha p{
-    margin: 0 auto;
+    margin: 7px auto;
 }
 
 .div-nivel{
@@ -92,6 +94,10 @@ body{
 
 .imgs div p{
     font-weight: bold;
+}
+
+#fecha-txt{
+    text-transform: uppercase;
 }
 
 
@@ -282,34 +288,7 @@ body{
     .costos div input{
         margin-top: 2px;
     }
-
-    /* .costos{
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        flex-wrap: wrap;
-
-        justify-content: center;
-        gap: 10px;
+    #fecha-txt{
+        font-size: 18px;
     }
-
-    .costos div{
-        width: calc(50% - 10px);
-        height: 100%;
-
-        text-align: center;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-    }
-
-    .costos div input{
-        max-width: 140px;
-    } */
 }
