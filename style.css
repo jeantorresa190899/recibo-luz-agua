@@ -151,25 +151,27 @@ body{
         /* font-size: 13px; */
     }
     #contenido div b:nth-child(1){
-        min-width: 55px;
-        max-width: 60px;
+        min-width: 35px;
+        max-width: 50px;
+        line-height: 15px;
+        /* background-color: red; */
     }
     #contenido div b:nth-child(2){
-        min-width: 60px;
-        margin-right: 65px !important;
+        min-width: 100px;
+        /* margin-right: 5px !important; */
         /* background-color: red; */
     }
 
     #contenido div input{
         min-width: 50px;
-        margin: 0 0 0 15px!important;
+        margin: 0 2px 0 13px!important;
 
     }
 
     /* 2 */
-    #contenido2 div{
-        /* margin: 0 15px !important; */
-    }
+    /* #contenido2 div{
+        margin: 0 15px !important;
+    } */
 
     #contenido2 div b{
         /* margin: auto 3px !important; */
@@ -185,7 +187,7 @@ body{
     /* cabecera */
     #cabecera{
         margin: 5px !important;
-        background-color: brown;
+        background-color: rgb(42, 165, 87);
         color: #fff;
         width: 100%;
 
