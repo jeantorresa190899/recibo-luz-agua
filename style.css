@@ -141,7 +141,10 @@ body{
     }
 
     #contenido div{
-        margin: 0 10px !important;
+        /* margin: 0 10px !important; */
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        margin: 0 !important;
     }
 
     #contenido div b{
@@ -216,14 +219,24 @@ body{
         justify-content: center;
     }
 
-
-    .inserts{
-        font-size: 13px;
-        letter-spacing: 0.5px;
-        margin: 0 !important;
+    /* PROBANDO */
+    #cab th{
+        box-shadow: 0 0 1px 2px #fff;
     }
 
-    .inserts b{
-        
+    #cab th:nth-child(1){
+        width: 40px;
+    }
+
+    #cab th:nth-child(3),
+    #cab th:nth-child(4){
+        max-width: 40px;
+        text-align: center;
+    }
+
+    #probando tr td{
+        line-height: 13px;
+        text-align: center;
+        vertical-align: middle;
     }
 }

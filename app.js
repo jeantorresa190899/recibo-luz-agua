@@ -41,6 +41,33 @@ nombres3.forEach(nombre =>{
     `;
 });
 
+
+// PROBANDO
+nombres.forEach(nombre => {
+    probando.innerHTML += `
+    <tr>
+        <td>${nombres.indexOf(nombre) + 1}</td>
+        <td>${nombre}</td>
+        <td><input type="number" class="form-control" id="actual-${nombres.indexOf(nombre) + 1}"></td>
+        <td><input type="number" class="form-control" id="antes-${nombres.indexOf(nombre) + 1}"></td>
+    </tr>
+    `;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Closure
 (function() {
     /**
