@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 .enel{
     width: 100px;
     height: 33px;
@@ -238,9 +240,12 @@ body{
         line-height: 13px;
         text-align: center;
         vertical-align: middle;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: .5px;
     }
 
     #probando tr td input{
-        padding: 5px !important ;
+        padding: 2px !important ;
     }
 }
