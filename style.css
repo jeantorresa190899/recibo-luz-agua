@@ -239,4 +239,8 @@ body{
         text-align: center;
         vertical-align: middle;
     }
+
+    #probando tr td input{
+        padding: 5px !important ;
+    }
 }
