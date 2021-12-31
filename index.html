@@ -16,9 +16,13 @@
 
 <body>
     <div class="costos">
+        <div class="input-fecha">
+            <label for="">REPORTE DEL MES / AÑO:</label>
+            <input type="number" id="fecha" class="form-control" placeholder="Ejemplo: ENERO 2022">
+        </div>
         <div>
             <label for="">COSTO POR KW</label>
-            <input type="number" id="kw" class="form-control" placeholder="Ejemplo: 0.60"> 
+            <input type="number" id="kw" class="form-control" placeholder="Ejemplo: 0.65"> 
         </div>
         <div>
             <label for="">COSTO ALUMBRADO</label>
@@ -32,12 +36,14 @@
             <label for="">COSTO AGUA STAND 30 Y TERCER PISO</label>
             <input type="number" id="agua-2" class="form-control">
         </div>
+
     </div>
+
 
 
     <span id="res"></span>
 
-    <h1>PRIMER PISO</h1>
+    <h1 style="text-align: center; margin-top: 30px;">PRIMER PISO</h1>
     <table class="table table-bordered ">
         <thead style="vertical-align: middle; text-align: center; background-color:#008000; color: #fff;">
             <tr style="line-height: 15px;" class="cab">
@@ -51,7 +57,7 @@
         </tbody>
     </table>
 
-    <h1>SEGUNDO PISO</h1>
+    <h1 style="text-align: center; margin-top: 30px;">SEGUNDO PISO</h1>
     <table class="table table-bordered ">
         <thead style="vertical-align: middle; text-align: center; background-color:#008000; color: #fff;">
             <tr style="line-height: 15px;" class="cab">
@@ -74,7 +80,7 @@
             <p class="galeria">GALERIA LIDER'S</p>
             <div class="row align-middle imgs">
                 <div class="col"><img src="imagenes/enel.png" class="enel"></div>
-                <div class="col fecha"><p>DICIEMBRE 2021</p></div>
+                <div class="col fecha"><p id="fecha-txt"></p></div>
                 <div class="col"><img src="imagenes/sedapal.png" class="sedapal"></div>
             </div>
         </div>
