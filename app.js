@@ -5,66 +5,48 @@ let nombres2 = ['LIZ ROCIO QUISPE','SAYDA VILCA'];
 // stand 15-28
 let nombres3 = ['FRANCISCA MONCADA','MARINA HOYOS','OSCAR PRADO','CARMEN CHAVEZ','MARITZA SALGUEDO','EDITA FARFAN','MARCELINO PRADO','EDITA RODRIGO','GUALBERTO MICUILLA','VALENTINA PARIONA','YUVE LUZ TARAZONA','BENITA PEREZ','TEODORO TORRES','KATERY RUT D.'];
 
-nombres.forEach(nombre => {
-    contenido.innerHTML += `
-    <div class="row inserts">
-        <b class="col m-2">${nombres.indexOf(nombre) + 1}</b>
-        <b class="col m-2">${nombre}</b>
-        <input type="number" class="form-control col" id="actual-${nombres.indexOf(nombre) + 1}">
-        <input type="number" class="form-control col" id="antes-${nombres.indexOf(nombre) + 1}">
-    </div>
-    <hr>
-    `;
-});
-
-nombres2.forEach(nombre =>{
-    contenido2.innerHTML += `
-    <div class="row m-4">
-        <b class="col m-2" style="max-width:30px">${nombres2.indexOf(nombre) + 29}</b>
-        <b class="col m-2" style="min-width:180px">${nombre}</b>
-        <input style="max-width:100px" type="number" class="form-control col mx-4" id="actual-${nombres2.indexOf(nombre) + 29}">
-        <input style="max-width:100px" type="number" class="form-control col mx-4" id="antes-${nombres2.indexOf(nombre) + 29}">
-    </div>
-    <hr>
-    `;
-});
-
-nombres3.forEach(nombre =>{
-    contenido3.innerHTML += `
-    <div class="row m-4 text-center">
-        <b class="col m-2" style="max-width:30px">${nombres3.indexOf(nombre) + 15}</b>
-        <b class="col m-2" style="min-width:200px">${nombre}</b>
-        <input style="max-width:100px" type="number" class="form-control col mx-4" id="actual-${nombres3.indexOf(nombre) + 15}">
-        <input style="max-width:100px" type="number" class="form-control col mx-4" id="antes-${nombres3.indexOf(nombre) + 15}">
-    </div>
-    <hr>
-    `;
-});
-
 
 // PROBANDO
 nombres.forEach(nombre => {
-    probando.innerHTML += `
+    contenido.innerHTML += `
     <tr>
         <td>${nombres.indexOf(nombre) + 1}</td>
         <td>${nombre}</td>
         <td><input type="number" class="form-control" id="actual-${nombres.indexOf(nombre) + 1}"></td>
         <td><input type="number" class="form-control" id="antes-${nombres.indexOf(nombre) + 1}"></td>
     </tr>
-
+    `;
+});
+nombres2.forEach(nombre =>{
+    contenido.innerHTML += `
+    <tr>
+        <td>${nombres2.indexOf(nombre) + 29}</td>
+        <td>${nombre}</td>
+        <td><input type="number" class="form-control" id="actual-${nombres2.indexOf(nombre) + 29}"></td>
+        <td><input type="number" class="form-control" id="antes-${nombres2.indexOf(nombre) + 29}"></td>
+    </tr>
     `;
 });
 
+nombres3.forEach(nombre =>{
+    contenido2.innerHTML += `
+    <tr>
+        <td>${nombres3.indexOf(nombre) + 15}</td>
+        <td>${nombre}</td>
+        <td><input type="number" class="form-control" id="actual-${nombres3.indexOf(nombre) + 15}"></td>
+        <td><input type="number" class="form-control" id="antes-${nombres3.indexOf(nombre) + 15}"></td>
+    </tr>
+    `;
+});
 
-
-
-
-
-
-
-
-
-
+contenido2.innerHTML += `
+    <tr>
+        <td>3er Piso</td>
+        <td>SALON DE EVENTOS</td>
+        <td><input type="number" class="form-control" id="actual-salon"></td>
+        <td><input type="number" class="form-control" id="antes-salon"></td>
+    </tr>
+`;
 
 
 

@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .enel{
     width: 100px;
@@ -142,8 +149,8 @@ body{
         margin: auto 7px !important;
     }
 
-    #contenido div{
-        /* margin: 0 10px !important; */
+    /* #contenido div{
+
         font-size: 13px;
         letter-spacing: 0.5px;
         margin: 0 !important;
@@ -153,33 +160,32 @@ body{
         
         margin: auto 3px !important;
         padding: 0 !important;
-        /* font-size: 13px; */
+
     }
     #contenido div b:nth-child(1){
         min-width: 35px;
         max-width: 50px;
         line-height: 15px;
-        /* background-color: red; */
+
     }
     #contenido div b:nth-child(2){
         min-width: 100px;
-        /* margin-right: 5px !important; */
-        /* background-color: red; */
+
     }
 
     #contenido div input{
         min-width: 50px;
         margin: 0 2px 0 13px!important;
 
-    }
+    } */
 
     /* 2 */
     /* #contenido2 div{
         margin: 0 15px !important;
     } */
 
-    #contenido2 div b{
-        /* margin: auto 3px !important; */
+    /* #contenido2 div b{
+
         padding: 0 !important;
         color: red;
     }
@@ -189,7 +195,6 @@ body{
         margin-right: 7px !important;
     }
 
-    /* cabecera */
     #cabecera{
         margin: 5px !important;
         background-color: rgb(42, 165, 87);
@@ -219,11 +224,12 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     /* PROBANDO */
-    #cab th{
-        box-shadow: 0 0 1px 2px #fff;
+    /* #cab th{
+        box-shadow: 1px 0 1px 0px #fff;
+        letter-spacing: .5px;
     }
 
     #cab th:nth-child(1){
@@ -234,18 +240,29 @@ body{
     #cab th:nth-child(4){
         max-width: 40px;
         text-align: center;
+    } */
+    .cab th{
+        letter-spacing: 1px;
+    }
+    .cab th:nth-child(1){
+        width: 40px !important;
     }
 
-    #probando tr td{
-        line-height: 13px;
+    /* MODIFICACION A TABLA */
+
+
+    #contenido tr td,
+    #contenido2 tr td{
+        line-height: 15px;
         text-align: center;
         vertical-align: middle;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
-        letter-spacing: .5px;
+        letter-spacing: .3px;
     }
 
-    #probando tr td input{
-        padding: 2px !important ;
+    #contenido tr td input,
+    #contenido2 tr td input{
+        padding: 5px !important ;
     }
 }
