@@ -5,6 +5,27 @@ let nombres2 = ['LIZ ROCIO QUISPE','SAYDA VILCA'];
 // stand 15-28
 let nombres3 = ['FRANCISCA MONCADA','MARINA HOYOS','OSCAR PRADO','CARMEN CHAVEZ','MARITZA SALGUEDO','EDITA FARFAN','MARCELINO PRADO','EDITA RODRIGO','GUALBERTO MICUILLA','VALENTINA PARIONA','YUVE LUZ TARAZONA','BENITA PEREZ','TEODORO TORRES','KATERY RUT D.'];
 
+document.querySelector("#btn-nombres").addEventListener("click", mostrar);
+function mostrar(){
+    input_nombres.value = nombres[btn_nombres.value];
+}
+
+let btn_actualizar_nom = document.querySelector("#actualizar-nombres");
+btn_actualizar_nom.addEventListener("click", actualizar);
+
+function actualizar(){
+    const index = nombres.findIndex(nombre => nombre === nombres[btn_nombres.value]);
+
+    nombres[index] = input_nombres.value;
+    input_nombres.value = nombres[index] ;
+
+    console.log(nombres[btn_nombres.value]);
+    console.log(index);
+    console.log(nombres);
+
+    var variable_actualizada = 1;
+}
+
 
 // PROBANDO
 nombres.forEach(nombre => {
@@ -327,8 +348,24 @@ if(document.querySelector("#agua-2").value == ''){
 
 }
 
-document.querySelector('#descargar').addEventListener('click', descargar);
+// FUNCION MODIFICAR NOMBRES POR STAND
+let btn_nombres = document.querySelector("#btn-nombres");
+let input_nombres = document.querySelector("#input-nombres");
 
+nombres.forEach(nombre => {
+    btn_nombres.innerHTML += `
+    <option value="${nombres.indexOf(nombre)}">${1 + nombres.indexOf(nombre)}
+    </option>   
+    `;
+});
+
+
+
+
+
+
+// FUNCION CONVERTIR A PDF
+document.querySelector('#descargar').addEventListener('click', descargar);
 function descargar(){
     const elemento = document.getElementById('topdf');
     var opt = {

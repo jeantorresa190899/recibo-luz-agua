@@ -101,153 +101,12 @@ body{
 }
 
 
-/* @media (max-width: 600px){
-    body{
-        margin: auto 7px !important;
-    }
 
-    #contenido div{
-        margin: 0 15px !important;
-    }
-
-    #contenido div b{
-        margin: auto 3px !important;
-        padding: 0 !important;
-
-    }
-
-    #contenido div input{
-        margin: 0 !important ;
-        margin-right: 7px !important;
-    }
-
-    #contenido2 div{
-        margin: 0 15px !important;
-    }
-
-    #contenido2 div b{
-        margin: auto 3px !important;
-        padding: 0 !important;
-    }
-
-    #contenido2 div input{
-        margin: 0 !important ;
-        margin-right: 7px !important;
-    }
-
-    #cabecera{
-        margin: 5px !important;
-        background-color: black;
-        color: #fff;
-        width: auto !important;
-    }
-
-    #cabecera div{
-        max-width: 120px !important;
-        padding: 5px !important;
-        margin: 0 !important;
-        border: 1px solid #fff;
-    }
-} */
 
 @media (max-width: 375px){
     body{
         margin: auto 7px !important;
     }
-
-    /* #contenido div{
-
-        font-size: 13px;
-        letter-spacing: 0.5px;
-        margin: 0 !important;
-    }
-
-    #contenido div b{
-        
-        margin: auto 3px !important;
-        padding: 0 !important;
-
-    }
-    #contenido div b:nth-child(1){
-        min-width: 35px;
-        max-width: 50px;
-        line-height: 15px;
-
-    }
-    #contenido div b:nth-child(2){
-        min-width: 100px;
-
-    }
-
-    #contenido div input{
-        min-width: 50px;
-        margin: 0 2px 0 13px!important;
-
-    } */
-
-    /* 2 */
-    /* #contenido2 div{
-        margin: 0 15px !important;
-    } */
-
-    /* #contenido2 div b{
-
-        padding: 0 !important;
-        color: red;
-    }
-
-    #contenido2 div input{
-        margin: 0 !important ;
-        margin-right: 7px !important;
-    }
-
-    #cabecera{
-        margin: 5px !important;
-        background-color: rgb(42, 165, 87);
-        color: #fff;
-        width: 100%;
-
-        font-size: 12px;
-
-        vertical-align: middle;
-
-    }
-
-    #cabecera div:nth-child(1){
-        min-width: 25px ;
-        max-width: 25px !important;
-    }
-    #cabecera div:nth-child(2){
-        min-width: 140px !important;
-    }
-
-    #cabecera div{
-        max-width: 120px !important;
-        padding: 5px !important;
-        margin: 0 !important;
-        border: 1px solid #fff;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
-
-    /* PROBANDO */
-    /* #cab th{
-        box-shadow: 1px 0 1px 0px #fff;
-        letter-spacing: .5px;
-    }
-
-    #cab th:nth-child(1){
-        width: 40px;
-    }
-
-    #cab th:nth-child(3),
-    #cab th:nth-child(4){
-        max-width: 40px;
-        text-align: center;
-    } */
-
 
     /* MODIFICACION A TABLA */
     .cab th{
@@ -291,4 +150,31 @@ body{
     #fecha-txt{
         font-size: 18px;
     }
+
+
+    /* MODIFICAR NOMBRES X STAND */
+
+    .boton-nombres{
+        width: 110px;
+        padding: 10px;
+    }
+
+    form{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        gap: 10px
+    };
+
+    form select {
+        width: 50px !important;
+    }
+    form input {
+        width: 250px !important;
+    }
+
+    .modifica button{
+        margin: 7px auto;
+    }
 }
+
